@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Turing Drawings</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="encoding" content="utf-8" />
+    <meta
+      name="keywords"
+      content="javascript, html5, canvas, Alan Turing, Turing machine, drawing, evolutionary"
+    />
+    <meta name="description" content="" />
+    <script language="javascript" src="utils-html.js"></script>
+    <script language="javascript" src="utils-misc.js"></script>
+    <script language="javascript" src="main.js"></script>
+    <script language="javascript" src="programs.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+  </head>
+  <body>
+    <canvas id="canvas">
+      Your browser does not support the canvas element.
+    </canvas>
+
+    <div id="controls" class="controlsVisible">
+      <form name="params" action="">
+        <div style="margin-top: 8px; margin-bottom: 8px">
+          Num states:
+          <input
+            id="numStates"
+            type="number"
+            value="4"
+            min="1"
+            max="24"
+            step="1"
+          />
+          Num symbols:
+          <input
+            id="numSymbols"
+            type="number"
+            value="3"
+            min="2"
+            max="99"
+            step="1"
+          />
+        </div>
+
+        <div style="margin-top: 8px; margin-bottom: 8px">
+          <button type="button" onclick="randomProg();">Random</button>
+          <button type="button" onclick="restartProg();">Restart</button>
+          <button type="button" onclick="pauseProg();">Pause</button>
+          <button type="button" onclick="randomizeColorMap();">
+            Randomize Colors
+          </button>
+        </div>
+
+        <div style="margin-top: 8px; margin-bottom: 8px">
+          <div>Shareable URL for this drawing:</div>
+          <div>
+            <input id="shareURL" type="text" size="42" value="" readonly />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

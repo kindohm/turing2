@@ -1,0 +1,10 @@
+{
+  "name": "turing-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mike Hodnick <mike@kindohm.com>",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "start": "npx alive-server --ignore=node_modules"
+  }
+}
