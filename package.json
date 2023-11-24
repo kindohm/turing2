@@ -5,6 +5,6 @@
   "author": "Mike Hodnick <mike@kindohm.com>",
   "license": "BSD-3-Clause",
   "scripts": {
-    "start": "npx alive-server --ignore=node_modules"
+    "start": "npx alive-server --ignore=node_modules --ignore=.git"
   }
 }
